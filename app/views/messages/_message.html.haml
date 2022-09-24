@@ -1,0 +1,5 @@
+.message{class: "cont-#{message.user_id}"}
+  .message-box{class: "msg-#{message.user_id}"}
+    - unless message.room.is_private
+      %h6.name=message.user.email
+    =message.body
