@@ -21,6 +21,10 @@
         display: flex;
         justify-content: flex-end;
       }
+      <%=".msg-#{current_user&.id}.message-box[data-time]:hover::after"%>{
+        left: -10em !important;
+      }
+
     </style>
   </head>
 
